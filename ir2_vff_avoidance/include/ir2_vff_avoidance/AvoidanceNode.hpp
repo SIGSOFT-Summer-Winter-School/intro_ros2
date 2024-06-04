@@ -36,6 +36,7 @@ struct VFFVectors
 
 typedef enum {RED, GREEN, BLUE, NUM_COLORS} VFFColor;
 
+
 class AvoidanceNode : public rclcpp::Node
 {
 public:
