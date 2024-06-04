@@ -10,6 +10,9 @@ set(dependencies
     std_msgs
 )
 
+add_executable(simple src/simple.cpp)
+ament_target_dependencies(simple ${dependencies})
+
 add_executable(publisher src/publisher.cpp)
 ament_target_dependencies(publisher ${dependencies})
 
@@ -35,6 +38,7 @@ add_executable(param_reader src/param_reader.cpp)
 ament_target_dependencies(param_reader ${dependencies})
 
 install(TARGETS
+  simple
   publisher
   publisher_class
   subscriber
